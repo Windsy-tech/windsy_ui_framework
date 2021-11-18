@@ -80,3 +80,13 @@ class WTextBox extends StatelessWidget {
     );
   }
 }
+
+class WScaffold extends StatelessWidget {
+  const WScaffold({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
