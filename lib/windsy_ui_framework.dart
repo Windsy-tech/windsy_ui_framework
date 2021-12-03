@@ -10,6 +10,36 @@ library windsy_ui_framework;
 
 import 'package:flutter/material.dart';
 
+//Theme Data
+class WThemeProvider extends ChangeNotifier {
+  ThemeMode themeMode = ThemeMode.dark;
+
+  bool get isDarkMode => themeMode == ThemeMode.dark;
+
+  void toggleTheme(bool isOn) {
+    themeMode = isOn ? ThemeMode.dark : ThemeMode.light;
+    notifyListeners();
+  }
+}
+
+class WTheme {
+  static final lightTheme = ThemeData(
+    scaffoldBackgroundColor: Colors.white,
+    colorScheme: const ColorScheme.light(),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: Colors.green,
+    ),
+  );
+
+  static final darkTheme = ThemeData(
+    scaffoldBackgroundColor: Colors.grey.shade900,
+    colorScheme: const ColorScheme.dark(),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: Colors.green,
+    ),
+  );
+}
+
 //Square Button
 class WSquareButton extends StatelessWidget {
   final Function() onPressed;
@@ -44,12 +74,14 @@ class WSquareButton extends StatelessWidget {
 class WTextBox extends StatelessWidget {
   final TextEditingController controller;
   final String hintText;
+  final TextStyle hintStyle;
   final Function(String) onChanged;
 
   const WTextBox({
     Key key,
     @required this.controller,
     this.hintText,
+    this.hintStyle,
     this.onChanged,
   }) : super(key: key);
 
@@ -60,6 +92,7 @@ class WTextBox extends StatelessWidget {
       onChanged: (string) => onChanged(string),
       decoration: InputDecoration(
         hintText: hintText,
+        hintStyle: hintStyle,
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(0.0),
           borderSide: const BorderSide(
@@ -77,17 +110,6 @@ class WTextBox extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class WScaffold extends StatelessWidget {
-  const WScaffold({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Test();
     );
   }
 }
