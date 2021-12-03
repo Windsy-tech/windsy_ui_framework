@@ -1,10 +1,8 @@
-/*
-This flutter package contains UI elements that are used commonly
-in all Windsy software's for both internal and external use.
+// This flutter package contains UI elements that are used commonly
+// in all Windsy software's for both internal and external use.
 
-created date: 18/11/2021.
-created by: Manjunath Muntha Purushotham
-* */
+// created date: 18/11/2021.
+// created by: Manjunath Muntha Purushotham
 
 library windsy_ui_framework;
 
@@ -45,7 +43,7 @@ class WSquareButton extends StatelessWidget {
   final Function() onPressed;
   final String text;
   // ignore: use_key_in_widget_constructors
-  const WSquareButton({Key key, @required this.text, @required this.onPressed})
+  const WSquareButton({Key? key, required this.text, required this.onPressed})
       : super(key: key);
 
   @override
@@ -72,14 +70,14 @@ class WSquareButton extends StatelessWidget {
 
 //Text Box
 class WTextBox extends StatelessWidget {
-  final TextEditingController controller;
-  final String hintText;
-  final TextStyle hintStyle;
-  final Function(String) onChanged;
+  final TextEditingController? controller;
+  final String? hintText;
+  final TextStyle? hintStyle;
+  final Function(String)? onChanged;
 
   const WTextBox({
-    Key key,
-    @required this.controller,
+    Key? key,
+    required this.controller,
     this.hintText,
     this.hintStyle,
     this.onChanged,
@@ -89,7 +87,7 @@ class WTextBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       controller: controller,
-      onChanged: (string) => onChanged(string),
+      onChanged: (string) => onChanged!(string),
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: hintStyle,
