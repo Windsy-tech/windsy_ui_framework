@@ -6,7 +6,10 @@
 
 library windsy_ui_framework;
 
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 //Theme Data
 class WThemeProvider extends ChangeNotifier {
@@ -73,11 +76,11 @@ class WTextBox extends StatelessWidget {
   final TextEditingController? controller;
   final String? hintText;
   final TextStyle? hintStyle;
-  final Function(String)? onChanged;
+  final ValueChanged<String>? onChanged;
 
   const WTextBox({
     Key? key,
-    required this.controller,
+    this.controller,
     this.hintText,
     this.hintStyle,
     this.onChanged,
@@ -108,6 +111,55 @@ class WTextBox extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class WCountryDropDown extends StatefulWidget {
+  const WCountryDropDown({Key? key}) : super(key: key);
+
+  @override
+  State<WCountryDropDown> createState() => _WCountryDropDownState();
+}
+
+class _WCountryDropDownState extends State<WCountryDropDown> {
+  var jsonResponse = [];
+
+  var _mySelection = "Aruba";
+
+  @override
+  void initState() {
+    getCountryData().then((value) {
+      jsonResponse = value;
+    });
+    super.initState();
+  }
+
+  Future getCountryData() async {
+    var url = "https://restcountries.com/v3.1/all";
+
+    http.Response response = await http.get(Uri.parse(url));
+    List data = json.decode(response.body);
+    return data;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return DropdownButton<String>(
+      isDense: true,
+      hint: const Text("Country"),
+      onChanged: (newVal) {
+        setState(() {
+          _mySelection = newVal!;
+        });
+      },
+      items: jsonResponse.map((item) {
+        return DropdownMenuItem(
+          child: Text(item['name']['common']),
+          value: "Test",
+        );
+      }).toList(),
+      value: _mySelection,
     );
   }
 }
