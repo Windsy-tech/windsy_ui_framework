@@ -1,179 +1,181 @@
 {
-  "uuid": "2e26fe88-596e-455f-88bf-85d02e413427",
-  "status": true,
-  "date": "2022-10-26T00:00:00.000",
-  "customer": "",
-  "supplier": "",
-  "externalAuditor": "",
-  "windFarm": "",
-  "wtSerialNo": "",
-  "wtType": "",
-  "towerBase": {
-    "inspectionID": "1",
-    "status": false,
-    "checkList": [
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      },
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      }
-    ]
-  },
-  "tower": {
-    "inspectionID": "1",
-    "status": false,
-    "checkList": [
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      },
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      }
-    ]
-  },
-  "electricalSystems": {
-    "inspectionID": "1",
-    "status": false,
-    "checkList": [
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      },
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      }
-    ]
-  },
-  "nacelle": {
-    "inspectionID": "1",
-    "status": false,
-    "checkList": [
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      },
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      }
-    ]
-  },
-  "nacelleRoof": {
-    "inspectionID": "1",
-    "status": false,
-    "checkList": [
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      },
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      }
-    ]
-  },
-  "hub": {
-    "inspectionID": "1",
-    "status": false,
-    "checkList": [
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      },
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      }
-    ]
-  },
-  "blade": {
-    "inspectionID": "1",
-    "status": false,
-    "checkList": [
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      },
-      {
-        "id": 1,
-        "component": "Exterior",
-        "inspectionType": "A.1",
-        "checks": "Visual Inspection",
-        "comments": "",
-        "images": [],
-        "status": false
-      }
-    ]
+  "Inspection": {
+    "uuid": "2e26fe88-596e-455f-88bf-85d02e413427",
+    "status": true,
+    "date": "2022-10-26T00:00:00.000",
+    "customer": "",
+    "supplier": "",
+    "externalAuditor": "",
+    "windFarm": "",
+    "wtSerialNo": "",
+    "wtType": "",
+    "towerBase": {
+      "inspectionID": "1",
+      "status": false,
+      "checkList": [
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        },
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        }
+      ]
+    },
+    "tower": {
+      "inspectionID": "1",
+      "status": false,
+      "checkList": [
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        },
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        }
+      ]
+    },
+    "electricalSystems": {
+      "inspectionID": "1",
+      "status": false,
+      "checkList": [
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        },
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        }
+      ]
+    },
+    "nacelle": {
+      "inspectionID": "1",
+      "status": false,
+      "checkList": [
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        },
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        }
+      ]
+    },
+    "nacelleRoof": {
+      "inspectionID": "1",
+      "status": false,
+      "checkList": [
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        },
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        }
+      ]
+    },
+    "hub": {
+      "inspectionID": "1",
+      "status": false,
+      "checkList": [
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        },
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        }
+      ]
+    },
+    "blade": {
+      "inspectionID": "1",
+      "status": false,
+      "checkList": [
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        },
+        {
+          "id": 1,
+          "component": "Exterior",
+          "inspectionType": "A.1",
+          "checks": "Visual Inspection",
+          "comments": "",
+          "images": [],
+          "status": false
+        }
+      ]
+    }
   }
 }
